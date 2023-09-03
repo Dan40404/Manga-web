@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mon compte</title>
+    <style>
+        {{ css|safe }}
+    </style>
+</head>
+<body>
+    <header>
+        {% include 'header.html' %}
+    </header>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="#infos">Mes informations</a></li>
+            <li><a href="#modifier">Modifier mes informations</a></li>
+            <li><a href="#modifierPassword">Modifier mon mot de passe</a></li>
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h1>Bienvenue sur votre compte</h1>
+
+        <div class="success-notification">
+    Modification réussie !
+</div>
+
+
+        <div id="infos" class="tab-content">
+            <h2>Mes informations</h2>
+            <h5>Nom :
+                {{ nom|safe }}
+            </h5>
+        </div>
+
+        <div id="modifier" class="tab-content">
+            <h2>Modifier mes informations</h2>
+            <form>
+
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required>
+                <br>
+                <br>
+                <label>Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+
+
+                <br>
+                <br>
+                <input type="submit" value="Enregistrer">
+            </form>
+        </div>
+
+        <div id="modifierPassword" class="tab-content">
+
+            <h2>Modifier mon mot de passe</h2>
+            <form>
+                <label>Entrez votre ancien mot de passe :</label>
+                <input type="password" id="oldPassword" name="oldPassword" required>
+                <br>
+                <br>
+                <label>Entrez votre nouveau mot de passe :</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <br>
+                <br>
+                <label>Confirmez votre nouveau mot de passe :</label>
+                <input type="password" id="confirmNewPassword" name="confirmNewPassword" required>
+                <br>
+                <br>
+                <input type="submit" value="Enregistrer">
+            </form>
+
+    </div>
+    </div>
+
+    <script>
+        {{ js|safe }}
+    </script>
+</body>
+</html>

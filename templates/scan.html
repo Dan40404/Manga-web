@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Changement d'image</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        {{ css|safe }}
+    </style>
+
+
+
+
+</head>
+<body>
+
+    <header>
+
+        {% include 'header.html' %}
+         <br>
+         <br>
+
+        <div id="brightness-selector">
+         <label for="brightness">Luminosité :</label>
+         <input type="range" id="brightness" min="0" max="200" value="100" step="1">
+        </div>
+
+         <br>
+         <br>
+
+        <div class="page-selector" id="page-selector">
+            <label for="page-select">Page :</label>
+            <select id="page-select">
+                <option value="0">Page 0</option>
+            </select>
+        </div>
+
+    </header>
+
+    <a name="top"></a>
+    <a href="#top" onclick="scrollToTop(event)"></a>
+
+
+
+    <div id="container">
+
+        <div id="image-blur">
+            <img id="image" src="" alt="ImageScan" loading="eager">
+        </div>
+    </div>
+
+    <script>
+
+    let urls = {{ urls|safe }};
+    let currentIndex = {{ index|safe }} - 1;
+    let NameOfManga = "{{ NameOfManga|safe }}";
+    let Brightness = "{{ Brightness|safe }}";
+
+    {{ js|safe }}</script>
+</body>
+</html>

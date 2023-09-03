@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+
+<div id="header-content">
+  <a href="{{ url_for('Home') }}">Accueil</a>
+  <a href="{{ url_for('Catalogue') }}">Catalogue</a>
+  <a href="{{ url_for('Account') }}">Mon compte</a>
+  <a href="{{ url_for('logout') }}">Déconnexion</a>
+
+</div>
+
+<button id="toggle-header-btn">
+  <i class="fas fa-chevron-down"></i>
+</button>

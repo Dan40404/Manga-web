@@ -1,0 +1,54 @@
+        /* Style pour le fond noir et les étoiles de l'espace */
+        body {
+            background-color: black;
+            background-image: url('etoiles.jpg');
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+
+        /* Style pour le formulaire de connexion */
+        #login-form {
+            background-color: white;
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Style pour le titre du formulaire */
+        #login-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style pour les champs de saisie du formulaire */
+        #login-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #login-form input[type="text"], #login-form input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+            margin-bottom: 20px;
+        }
+
+        /* Style pour le bouton de soumission du formulaire */
+        #login-form input[type="submit"] {
+            width: 100%;
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Style pour les messages d'erreur */
+        .error {
+            color: red;
+            margin-top: 10px;
+        }

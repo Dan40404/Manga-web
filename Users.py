@@ -1,0 +1,1 @@
+Users = {1: {'name': 'Dan', 'password': 'iyCz4XUj4Vyprj@', 'indexes': {'soloLeveling': 246, 'DrStone': 2, 'OnePiece': 24}, 'brightness': '80'}}
